@@ -8,87 +8,99 @@ function Footer() {
           <div className="col logo">
             <img
               src="media/images/logo.svg"
-              style={{ width: "80%" }}
+              style={{ width: "50%" }}
               alt="Logo"
             />
             <p>&copy; 2010 - 2025, Zerodha Broking Ltd. All rights reserved.</p>
           </div>
-          <div className="col">
-            <p>Company</p>
-            <a href="">Open demat account</a>
-            <br />
-            <a href="">Minor demat account</a>
-            <br />
-            <a href="">NRI demat account</a>
-            <br />
-            <a href="">Commodity</a>
-            <br />
-            <a href="">Dematerialisation</a>
-            <br />
-            <a href="">Fund transfer</a>
-            <br />
-            <a href="">MTF</a>
-            <br />
-            <a href="">Referral program</a>
-            <br />
+          <div className="col list-container">
+            <ul>
+              <h5 className="mb-3">Account</h5>
+              <li>
+                <a href="#">Open demat account</a>
+              </li>
+              <li>
+                <a href="#">Minor demat account</a>
+              </li>
+              <li>
+                <a href="#">NRI demat account</a>
+              </li>
+              <li>
+                <a href="#">Commodity</a>
+              </li>
+              <li>
+                <a href="#">Dematerialisation</a>
+              </li>
+              <li>
+                <a href="#">Fund transfer</a>
+              </li>
+              <li>
+                <a href="#">MTF</a>
+              </li>
+              <li>
+                <a href="#">Referral program</a>
+              </li>
+            </ul>
           </div>
-          <div className="col">
-            <p>Support</p>
-            <a href="">Contact us</a>
-            <br />
-            <a href="">Support portal</a>
-            <br />
-            <a href="">How to file a complaint?</a>
-            <br />
-            <a href="">Status of your complaints</a>
-            <br />
-            <a href="">Bulletin</a>
-            <br />
-            <a href="">Circular</a>
-            <br />
-            <a href="">Z-Connect blog</a>
-            <br />
-            <a href="">Downloads</a>
-            <br />
+          <div className="col list-container">
+            <ul>
+              <h5 className="mb-3">Support</h5>
+              <li>
+                <a href="#">Contact us</a>
+              </li>
+              <li>
+                <a href="#">Support portal</a>
+              </li>
+              <li>
+                <a href="#">How to file a complaint?</a>
+              </li>
+              <li>
+                <a href="#">Status of your complaints</a>
+              </li>
+              <li>
+                <a href="#">Bulletin</a>
+              </li>
+              <li>
+                <a href="#">Circular</a>
+              </li>
+              <li>
+                <a href="#">T-Connect blog</a>
+              </li>
+              <li>
+                <a href="#">Downloads</a>
+              </li>
+            </ul>
           </div>
-          <div className="col">
-            <p>Account</p>
-            <a href="">About</a>
-            <br />
-            <a href="">Philosophy</a>
-            <br />
-            <a href="">Press & media</a>
-            <br />
-            <a href="">Careers</a>
-            <br />
-            <a href="">Zerodha Cares (CSR)</a>
-            <br />
-            <a href="">Zerodha.tech</a>
-            <br />
-            <a href="">Open source</a>
-            <br />
-          </div>
-          <div className="col">
-            <p>Quick links</p>
-            <a href="">Upcoming IPOs</a>
-            <br />
-            <a href="">Brokerage charges</a>
-            <br />
-            <a href="">Market holidays</a>
-            <br />
-            <a href="">Economic calendar</a>
-            <br />
-            <a href="">Calculators</a>
-            <br />
-            <a href="">Markets</a>
-            <br />
-            <a href="">Sectors</a>
-            <br />
+          <div className="col list-container">
+            <ul>
+              <h5 className="mb-3">Company</h5>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Philosophy</a>
+              </li>
+              <li>
+                <a href="#">Press & media</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">TradeTrack Cares (CSR)</a>
+              </li>
+              <li>
+                <a href="#">TradeTrack.tech</a>
+              </li>
+              <li>
+                <a href="#">Open source</a>
+              </li>
+              </ul>
           </div>
         </div>
-        <div className="mt-5 text-muted p-5" style={{ fontSize: "10px" }}>
+        <div className="text-muted p-5" style={{ fontSize: "10px" }}>
           <p>
-            Zerodha Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration
+            TradeTrack Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration
             no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha
             Broking Ltd. – SEBI Registration no.: IN-DP-431-2019 Commodity
             Trading through Zerodha Commodities Pvt. Ltd. MCX: 46025; NSE-50001
@@ -145,26 +157,34 @@ function Footer() {
             claiming to be part of Zerodha and offering such services, please
             create a ticket here.
           </p>
+          <ul className="nav-list">
+              <li>
+                <a href="#">NSE</a>
+              </li>
+              <li>
+                <a href="#">BSE</a>
+              </li>
+              <li>
+                <a href="#">MCX</a>
+              </li>
+              <li>
+                <a href="#">Terms & conditions</a>
+              </li>
+              <li>
+                <a href="#">Privacy policy</a>
+              </li>
+              <li>
+                <a href="#">Disclosure</a>
+              </li>
+              <li>
+                <a href="#">For investor's attention</a>
+              </li>
+              <li>
+                <a href="#">Investor charter</a>
+              </li>
+          </ul>
         </div>
-        <div className="" style={{textDecoration: "none"}}>
-        <a href="" >NSE</a>
-
-        <a href="">BSE</a>
-
-        <a href="">MCX</a>
-
-        <a href="">Terms & conditions</a>
-
-        <a href="">Policies & procedures </a>
-
-        <a href="">Privacy policy </a>
-
-        <a href="">Disclosure </a>
-
-        <a href="">For investor's attention </a>
-
-        <a href="">Investor charter</a>
-        </div>
+          
       </div>
     </footer>
   );

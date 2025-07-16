@@ -39,3 +39,61 @@ code {
   flex-wrap: wrap;
   font-size: 10px;
 }
+
+.list-container ul{
+  list-style: none;
+}
+
+.list-container ul li a{
+  text-decoration: none;
+  color: #6c757d;          /* muted gray color (Bootstrap's muted tone) */
+  font-size: 0.875rem; 
+}
+
+.list-container ul li a:hover{
+  color: #387ed1;
+}
+
+.list-container ul li{
+  margin-bottom: 8px;
+}
+
+.nav-list {
+  display: flex;          /* Arrange <li> horizontally */
+  justify-content: center; /* Center the whole list horizontally */
+  list-style: none;       /* Remove bullet points */
+  padding: 0;             /* Remove default padding */
+  margin: 0;              /* Remove default margin */
+  gap: 30px;              /* Space between list items */
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #6c757d;         /* Muted gray */
+  font-size: 0.8rem;
+}
+
+.nav-list li a:hover {
+  color: #007bff;         /* Blue on hover */
+}
+
+/* support section */
+#supportHero {
+  background-color: rgb(56, 126, 209);
+  color: white;
+}
+
+#supportHero a {
+  color: white;
+}
+
+#supportHero input {
+  padding: 15px 230px;
+}
+
+#supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
