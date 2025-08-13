@@ -9,6 +9,7 @@ export default function Login() {
   const navigate = useNavigate();
 
   const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+  const DASHBOARD_URL = process.env.REACT_APP_DASHBOARD_URL;
 
  const handleLogin = async () => {
   if (!email || !password) {
@@ -17,10 +18,10 @@ export default function Login() {
   }
 
   try {
-    const res = await axios.post("http://localhost:3002/login", { email, password });
+    const res = await axios.post(`${API_BASE_URL}/login`, { email, password });
     if (res.status === 200) {
       localStorage.setItem("isLoggedIn", "true");
-      window.location.href = "http://localhost:3001";  // Redirect to dashboard app
+      window.location.href = DASHBOARD_URL || "/";
     }
   } catch (err) {
     setMessage("Invalid email or password");

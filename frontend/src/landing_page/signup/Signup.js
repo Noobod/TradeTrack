@@ -8,13 +8,14 @@ export default function Signup() {
   const navigate = useNavigate();
 
   const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+  const DASHBOARD_URL = process.env.REACT_APP_DASHBOARD_URL;
 
   const handleSignup = async () => {
   try {
-    const res = await axios.post("http://localhost:3002/signup", { email, password });
+    const res = await axios.post(`${API_BASE_URL}/signup`, { email, password });
     if (res.status === 200 || res.status === 201) {
       localStorage.setItem("isLoggedIn", "true");
-      window.location.href = "http://localhost:3001";  // Redirect to dashboard app
+      window.location.href = DASHBOARD_URL || "/";
     }
   } catch (error) {
     alert("Signup failed");

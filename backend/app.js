@@ -23,6 +23,13 @@ app.use(
       if (allowedOrigins.indexOf(origin) !== -1) {
         return callback(null, true);
       }
+      if (
+        process.env.ALLOW_VERCEL_PREVIEWS === "true" &&
+        typeof origin === "string" &&
+        origin.endsWith(".vercel.app")
+      ) {
+        return callback(null, true);
+      }
       return callback(new Error("Not allowed by CORS"), false);
     },
     credentials: true,
