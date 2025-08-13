@@ -11,7 +11,7 @@ const { UserModel } = require("./model/UserModel");
 
 const app = express();
 
-const allowedOrigins = (process.env.CORS_ORIGINS || "http://localhost:3000,http://localhost:3001")
+const allowedOrigins = (process.env.CORS_ORIGINS || "http://localhost:3000,http://localhost:3001,https://trade-track-plum.vercel.app")
   .split(",")
   .map((o) => o.trim());
 
