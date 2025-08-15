@@ -11,10 +11,21 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg border-bottom sticky-top" style={{ backgroundColor: "#FFF" }}>
+    <nav
+      className="navbar navbar-expand-lg border-bottom sticky-top"
+      style={{ backgroundColor: "#FFF" }}
+    >
       <div className="container">
-        <Link className="navbar-brand logo" to="/">
-          <img src="media/images/logo.svg" style={{ width: "18%" }} alt="Logo" />
+        <Link
+          className="navbar-brand logo"
+          to="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <img
+            src="media/images/logo.svg"
+            style={{ width: "18%" }}
+            alt="Logo"
+          />
         </Link>
         <button
           className="navbar-toggler"
@@ -34,16 +45,22 @@ function Navbar() {
               {!isLoggedIn ? (
                 <>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/signup">Signup</Link>
+                    <Link className="nav-link" to="/signup">
+                      Signup
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/login">Login</Link>
+                    <Link className="nav-link" to="/login">
+                      Login
+                    </Link>
                   </li>
                 </>
               ) : (
                 <>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/dashboard">Dashboard</Link>
+                    <Link className="nav-link" to="/dashboard">
+                      Dashboard
+                    </Link>
                   </li>
                   <li className="nav-item">
                     <button
@@ -57,16 +74,24 @@ function Navbar() {
                 </>
               )}
               <li className="nav-item">
-                <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" to="/about">
+                  About
+                </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/product">Product</Link>
+                <Link className="nav-link" to="/product">
+                  Product
+                </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/pricing">Pricing</Link>
+                <Link className="nav-link" to="/pricing">
+                  Pricing
+                </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/support">Support</Link>
+                <Link className="nav-link" to="/support">
+                  Support
+                </Link>
               </li>
             </ul>
           </form>
