@@ -1,3 +1,4 @@
+// LeftSection.js
 import React from "react";
 
 function LeftSection({
@@ -11,9 +12,12 @@ function LeftSection({
 }) {
   return (
     <div className="container p-5">
-      <div className="row p-4">
-        <div className="col-7 p-3">
-          <img src={imageURL} />
+      <div className="row p-4 align-items-center">
+        <div className="col-7 p-3 text-center">
+          <img
+            src={imageURL}
+            style={{ width: "100%", maxHeight: "300px", objectFit: "contain" }}
+          />
         </div>
         <div className="col-5 mt-2 p-5">
           <h1 className="fs-2 mt-3">{productName}</h1>
@@ -22,14 +26,14 @@ function LeftSection({
           </p>
           <div>
             <a href={tryDemo} style={{ textDecoration: "none" }}>
-              Try Demo <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              Try Demo <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a>
             <a
               href={learnMore}
               style={{ marginLeft: "80px", textDecoration: "none" }}
             >
               Learn More{" "}
-              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a>
           </div>
           <div className="mt-4">

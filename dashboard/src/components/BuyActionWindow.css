@@ -219,3 +219,59 @@
     color: #fff;
   }
   
+  /* ===== Mobile Responsiveness ===== */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    left: 5%;
+    height: auto;
+    bottom: 10px;
+    padding-bottom: 20px;
+  }
+
+  .regular-order {
+    padding: 10px 12px;
+  }
+
+  .inputs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .inputs fieldset {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .inputs fieldset input {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .buttons {
+    flex-direction: column;
+    top: 0;
+    padding: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  .header h3 {
+    font-size: 0.9rem;
+  }
+
+  .market-options,
+  .order-validity label span {
+    font-size: 0.7rem;
+  }
+}

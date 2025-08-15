@@ -77,6 +77,17 @@ code {
   color: #007bff;         /* Blue on hover */
 }
 
+footer a {
+  text-decoration: none; /* removes underline */
+  color: inherit;        /* keeps same color as parent text */
+}
+
+footer a:hover {
+  text-decoration: underline; /* optional: underline on hover */
+  color: inherit;              /* keeps color consistent */
+}
+
+
 /* support section */
 #supportHero {
   background-color: rgb(56, 126, 209);

@@ -15,7 +15,8 @@ function Navbar() {
       className="navbar navbar-expand-lg border-bottom sticky-top"
       style={{ backgroundColor: "#FFF" }}
     >
-      <div className="container">
+      <div className="container d-flex justify-content-between align-items-center">
+        {/* Logo on left */}
         <Link
           className="navbar-brand logo"
           to="/"
@@ -27,6 +28,8 @@ function Navbar() {
             alt="Logo"
           />
         </Link>
+
+        {/* Hamburger on right */}
         <button
           className="navbar-toggler"
           type="button"
@@ -39,62 +42,39 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
+        {/* Menu items */}
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <form className="d-flex" role="search">
-            <ul className="navbar-nav mb-lg-0">
-              {!isLoggedIn ? (
-                <>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/signup">
-                      Signup
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/login">
-                      Login
-                    </Link>
-                  </li>
-                </>
-              ) : (
-                <>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/dashboard">
-                      Dashboard
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <button
-                      className="nav-link btn btn-link"
-                      onClick={handleLogout}
-                      style={{ textDecoration: "none" }}
-                    >
-                      Logout
-                    </button>
-                  </li>
-                </>
-              )}
-              <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/product">
-                  Product
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/pricing">
-                  Pricing
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/support">
-                  Support
-                </Link>
-              </li>
-            </ul>
-          </form>
+          <ul className="navbar-nav ms-auto mb-lg-0">
+            {!isLoggedIn ? (
+              <>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/signup">Signup</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/login">Login</Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/dashboard">Dashboard</Link>
+                </li>
+                <li className="nav-item">
+                  <button
+                    className="nav-link btn btn-link"
+                    onClick={handleLogout}
+                    style={{ textDecoration: "none" }}
+                  >
+                    Logout
+                  </button>
+                </li>
+              </>
+            )}
+            <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/product">Product</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/pricing">Pricing</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/support">Support</Link></li>
+          </ul>
         </div>
       </div>
     </nav>

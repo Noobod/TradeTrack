@@ -841,3 +841,140 @@ hr {
 .action:hover {
   background-color: rgb(212, 212, 212);
 }
+
+/* =======================
+   Mobile Responsiveness
+======================= */
+@media (max-width: 768px) {
+  /* Dashboard stacking */
+  .dashboard-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  /* Watchlist on top, content below */
+  .watchlist-container {
+    flex-basis: 100%;
+    height: 180px; /* adjust as needed */
+    box-shadow: none;
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+
+  /* Main content */
+  .content {
+    flex-basis: 100%;
+    height: auto;
+    padding: 3% 5%;
+  }
+
+  /* Row and columns stacking */
+  .row {
+    flex-direction: column;
+    margin-top: 3%;
+  }
+
+  .col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Topbar stacked */
+  .topbar-container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 5%;
+  }
+
+  /* Indices section */
+  .indices-container,
+  .nifty,
+  .sensex {
+    flex-basis: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  /* Search container */
+  .search-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  /* Watchlist number section */
+  .watchlist-number {
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .watchlist-number ul li {
+    display: inline-block;
+    padding: 5px 10px;
+    border-right: 0.5px solid rgb(231, 231, 231);
+  }
+
+  /* Tables shrink font */
+  .order-table td,
+  .order-table th {
+    font-size: 0.7rem;
+    padding: 5px 3px;
+  }
+
+  /* Data section adjustments */
+  .data {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .data hr {
+    display: none;
+  }
+
+  /* Section titles */
+  .section span p {
+    font-size: 1rem;
+  }
+
+  .section span .section-icon {
+    transform: scale(0.6);
+  }
+
+  /* Buttons smaller */
+  .btn {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+}
+
+/* Optional: super small screens */
+@media (max-width: 480px) {
+  .watchlist-container {
+    height: 150px;
+  }
+
+  .search {
+    font-size: 0.7rem;
+    padding: 10px 15px;
+  }
+
+  .col h5 {
+    font-size: 1.3rem;
+  }
+
+  .col p {
+    font-size: 0.7rem;
+  }
+
+  .data .first h3 {
+    font-size: 1.8rem;
+  }
+}
