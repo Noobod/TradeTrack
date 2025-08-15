@@ -1,6 +1,7 @@
 import React from "react";
 
 function Hero() {
+  const SIGNUP_URL = "/signup";
   return (
     <div className="container p-5">
       <div className="row text-center">
@@ -29,6 +30,7 @@ function Hero() {
             maxWidth: "300px",
             margin: "0 auto",
           }}
+          onClick={() => window.location.href = SIGNUP_URL}
         >
           Signup for Now
         </button>
