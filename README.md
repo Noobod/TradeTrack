@@ -1,67 +1,91 @@
-# TradeTrack
+# TradeTrack — Trading Dashboard (Zerodha Clone)
 
-[Live Demo](https://trade-track-front.vercel.app/)
+TradeTrack is a Zerodha-style trading dashboard clone built with the MERN stack.
+It simulates a real trading workflow (no live market data) and focuses on UI, dashboard logic, authentication, and data visualization.
 
-TradeTrack is a clone of Zerodha's trading interface.  
-It simulates trading data (not live) and provides a fully responsive interface built with the MERN stack.  
+Live Demo: https://trade-track-front.vercel.app/
 
----
+## What This Project Demonstrates
 
-## Table of Contents
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Folder Structure](#folder-structure)
-- [Installation](#installation)
-- [Demo Credentials](#demo-credentials)
-- [Deployment](#deployment)
-- [License](#license)
+Building dashboard-heavy applications
 
----
+Separating frontend, dashboard, and backend services
 
-## Features
-- Clone of Zerodha trading interface
-- Responsive UI for desktop and mobile
-- Dashboard with Holdings, Positions, and Orders
-- Charts using Chart.js
-- Signup and Login functionality
-- Place new orders (simulated)
-- View historical holdings and positions (simulated data)
-- Fully working frontend and dashboard
-- Integration with MongoDB Atlas for data storage
+Authentication flows and protected routes
 
----
+Data visualization using charts
+
+Scalable MERN architecture
+
+## Key Features
+
+Zerodha-inspired trading UI
+
+Separate landing app and dashboard app
+
+Login / Signup (Passport.js – local strategy)
+
+Holdings, Positions, Orders dashboards
+
+Chart-based analytics using Chart.js
+
+Fully responsive (desktop & mobile)
+
+Simulated trading data (no real trades)
+
+## Architecture Overview
+
+The project is split into three independent services:
+```java
+TradeTrack/
+├── frontend/   → Public landing + auth UI (React)
+├── dashboard/  → Auth-protected trading dashboard (React)
+└── backend/    → API + auth + database (Node.js / Express)
+```
+
+After authentication, users are redirected from the frontend to the dashboard.
 
 ## Tech Stack
-- **Frontend:** React, Bootstrap, MUI, Chart.js  
-- **Backend:** Node.js, Express.js  
-- **Database:** MongoDB (MongoDB Atlas)  
-- **Authentication:** Passport.js (local strategy)  
-- **Deployment:** Vercel  
 
----
+### Frontend
 
-## Folder Structure
-root/
-│
-├── frontend/ # React app for main landing page
-├── dashboard/ # React app for user dashboard
-└── backend/ # Express server and MongoDB models
+React
 
+Bootstrap, Material UI
 
-## Installation
-- Clone the repo:
-- git clone https://github.com/Noobod/TradeTrack.git
+Chart.js
 
----
+### Backend
+
+Node.js
+
+Express
+
+MongoDB (Atlas)
+
+Passport.js (local authentication)
+
+### Deployment
+
+Frontend & Dashboard: Vercel
+
+Backend: Render
 
 ## Demo Credentials
-- Email: demo@TradeTrack.com
-- Password: demo123
-- These credentials allow you to test the dashboard without signing up.
+Email: demo@TradeTrack.com
+Password: demo123
 
-## Deployment
-- The project is deployed on Vercel:
-- Live Demo https://trade-track-front.vercel.app
 
-## License
-This project is open source and free to use for learning purposes.
+(For testing purposes only)
+
+## What I Learned
+
+Structuring multi-app React projects
+
+Dashboard design patterns
+
+Auth flows between separate clients
+
+Chart-driven data presentation
+
+Realistic project organization beyond tutorials
